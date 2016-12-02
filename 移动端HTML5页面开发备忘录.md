@@ -35,7 +35,7 @@
 ## 有关Meta
 
 #### 基本Meta
-```
+```html
     <!-- 设置缩放，shrink-to-fit=no可以防止页面在transition时进行自动的收缩，miniual-ui为ios的safari新增的属性，隐藏顶部的地址栏和底部的导航栏-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui,shrink-to-fit=no" />
     <!-- 可隐藏地址栏，仅针对IOS的Safari（注：IOS7.0版本以后，safari上已看不到效果） -->
@@ -47,7 +47,7 @@
 ```
 
 #### 搜索引擎Meta
-```
+```html
     <!-- 搜索引擎索引方式：通常有如下几种取值：none，noindex，nofollow，all，index和follow。-->
     <meta name="robots" content="index,follow" />
     <!--
@@ -61,7 +61,7 @@
 ```
 
 #### 页面缓存设置Meta
-```
+```html
     <!-- 清除缓存 -->
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
@@ -71,7 +71,7 @@
 ## 常见问题
 
 #### 移动端字体设置
-```
+```css
     /*中英字体名对照表
     宋体      SimSun
     黑体      SimHei
@@ -91,7 +91,7 @@
 ```
 
 #### 打电话发短信写邮件
-```
+```html
     // 打电话
     <a href="tel:010-88888">打电话给:010-88888</a>
     
@@ -155,7 +155,7 @@
 - zepto的touch模块
 
 ## 点击元素产生背景或边框问题
-```
+```css
     a,button,input,textarea { 
         -webkit-tap-highlight-color: rgba(0,0,0,0); 
         -webkit-user-modify:read-write-plaintext-only; //-webkit-user-modify有个副作用，就是输入法不再能够输入多个字符
@@ -165,7 +165,7 @@
 ```
 
 ## 字体单位font-size选择px还是rem
-```
+```css
      /*如需适配多种移动设备，建议使用rem。以下为参考值：*/
     html { font-size: 62.5%; }   /*10÷16 = 62.5%*/
     /*设置12px字体。
@@ -174,7 +174,7 @@
 ```
 
 ## 其它一些实用CSS技巧
-```
+```css
     /*禁止长按链接与图片弹出菜单*/
     a,img { -webkit-touch-callout: none }    
     /*禁止ios和android用户选中文字*/
@@ -195,14 +195,14 @@
 ```
 
 ## 禁用input在ios下，输入英文首字母的默认大写
-```
+```html
     <input autocapitalize="off" autocorrect="off" />
 ```
 
 ## 屏幕旋转的事件和样式
 
 #### JS处理：
-```
+```js
     function orientInit(){
         var orientChk = document.documentElement.clientWidth > document.documentElement.clientHeight?'landscape':'portrait';
         if(orientChk =='lapdscape'){
@@ -219,7 +219,7 @@
 ```
 
 #### CSS处理：
-```
+```css
     /*竖屏时样式*/
     @media all and (orientation:portrait){   }
     /*横屏时样式*/
@@ -227,7 +227,7 @@
 ```
 
 ## 播放视频不全屏
-```
+```html
     <!--
     1.ios7+支持自动播放
     2.支持Airplay的设备（如：音箱、Apple TV)播放
@@ -239,7 +239,7 @@
 ```
 
 ## 消除transition闪屏
-```
+```css
     .css {
         -webkit-transform-style: preserve-3d;
         -webkit-backface-visibility: hidden;
