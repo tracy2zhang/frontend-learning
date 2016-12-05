@@ -194,9 +194,9 @@
     input::-webkit-input-speech-button {display: none}
 ```
 
-## 禁用input在ios下，输入英文首字母的默认大写
+## 禁用input在ios下，输入英文首字母的默认大写，页面加载时就自动获取焦点
 ```html
-    <input autocapitalize="off" autocorrect="off" />
+    <input autocapitalize="off" autocorrect="off" autofocus />
 ```
 
 ## 屏幕旋转的事件和样式
