@@ -193,6 +193,7 @@
     /*android上去掉语音输入按钮*/
     input::-webkit-input-speech-button {display: none}
 ```
+使用translate3d代替translate可以自动开启GPU加速渲染
 
 ## 禁用input在ios下，输入英文首字母的默认大写，页面加载时就自动获取焦点
 ```html
