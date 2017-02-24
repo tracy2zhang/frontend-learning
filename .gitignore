@@ -35,3 +35,12 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# npm
+/node_modules/
+
+dist/
+.idea/
+test/
+main.js
+.DS_Store

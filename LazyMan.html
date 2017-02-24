@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LazyMan</title>
+
+    <script>
+
+        /**
+         * LazyMan构造函数
+         * @param name 名字
+         * @returns {LazyMan}
+         * @constructor
+         */
+        function LazyMan(name) {
+
+            // 检查是否调用new来创建LazyMan，如果不是，手动调用new
+            if(this.constructor !== LazyMan) {
+                return new LazyMan(name)
+            }
+
+            // LazyMan的名称
+            this.name = name || 'no one';
+            // 任务队列
+            this.taskQueue = [];
+
+            // 利用setTimeout在下一个 event loop 执行init函数
+            setTimeout(this.init.bind(this), 0);
+        }
+
+        /**
+         * 初始化函数
+         */
+        LazyMan.prototype.init = function () {
+            var greeting = 'Hi, this is ' + this.name;
+            console.log(greeting);
+            document.writeln(greeting + '<br>');
+            this.next(); // 开始执行任务队列
+        };
+
+        /**
+         * 事件调度函数
+         */
+        LazyMan.prototype.next = function () {
+            var fn = this.taskQueue.shift();
+            fn && fn();
+        };
+
+        /**
+         * 普通函数注册
+         * @param funcName 函数名称
+         * @param fn 函数实体
+         * @param first 是否将此方法置顶
+         */
+        LazyMan.register = function(funcName, fn, first) {
+            LazyMan.prototype[funcName] = function () {
+                var self = this;
+                var args = arguments;
+                var func = function () {
+                    fn.apply(self, args);
+                    self.next();
+                };
+                first ? this.taskQueue.unshift(func) : this.taskQueue.push(func);
+                return this; // 返回实例以便链式调用
+            }
+        };
+
+        /**
+         * 延时函数注册，具体延时根据fn中的第一个参数
+         * @param funcName 函数名称
+         * @param fn 函数实体
+         * @param first 是否将此方法置顶
+         */
+        LazyMan.throttle = function(funcName, fn, first) {
+            LazyMan.prototype[funcName] = function () {
+                var self = this;
+                var args = arguments;
+                var second = args[0] || 1;  //第一个参数应该是时间(s)，如果没有默认为1
+                var func = function () {
+                    setTimeout(function () {
+                        fn.apply(self, args);
+                        self.next();
+                    }, second*1000);
+                };
+                first ? this.taskQueue.unshift(func) : this.taskQueue.push(func);
+                return this; // 返回实例以便链式调用
+            }
+        };
+
+    </script>
+
+    <script>
+
+        var log = function () {
+            console.log.apply(null,arguments);
+            document.writeln(Array.prototype.join.call(arguments, ' | ') + '<br>');
+        };
+
+        // 以下是自定义的方法
+
+        LazyMan.register('eat', function (food) {
+            log(this.name + ' Eat ' + food + ' ~');
+        });
+        LazyMan.register('play', function (game) {
+            log(this.name + ' Play ' + game + ' ~');
+        });
+        LazyMan.register('eatFirst', function (food) {
+            log(this.name + ' Eat ' + food + ' first ~');
+        }, true);
+        LazyMan.register('playFirst', function (food) {
+            log(this.name + ' play ' + food + ' first ~');
+        }, true);
+        LazyMan.throttle('sleep', function (second) {
+            log(this.name + ' sleep ' + second + ' seconds ~');
+        });
+        LazyMan.throttle('sleepFirst', function (second) {
+            log(this.name + ' sleep ' + second + ' seconds first ~');
+        }, true);
+
+        var lazyMan1 = new LazyMan('utopia');
+        lazyMan1.eat('cookie').eatFirst('hamburger').sleep(5).play('baskerball').playFirst('football').sleepFirst(3);
+
+        var lazyMan2 = LazyMan('shera');
+        lazyMan2.eat('cake').sleepFirst(2).play('baskerball').sleep(3);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
