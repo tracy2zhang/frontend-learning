@@ -94,10 +94,10 @@
 ```html
     // 打电话
     <a href="tel:010-88888">打电话给:010-88888</a>
-    
+
     //  发短信
     <a href="sms:88888">发短信给: 88888</a>
-    
+
     // 写邮件
     //注：在添加这些功能时，第一个功能以"?"开头，后面的以"&"开头
     //1.普通邮件
@@ -110,7 +110,7 @@
     <a href="mailto:haha@wtf.com;384900096@wtf.com">快来点我啊，给你发种子。</a>
     //5.包含主题，用?subject=
     <a href="mailto:haha@wtf.com?subject=邮件主题">快来点我啊，给你发种子。</a>
-    //6.包含内容，用?body=;如内容包含文本，使用%0A给文本换行 
+    //6.包含内容，用?body=;如内容包含文本，使用%0A给文本换行
     <a href="mailto:haha@wtf.com?body=邮件主题内容%0A我是第二行内容%0A你没有猜错，这是我是第三行。">快来点我啊，给你发种子。</a>
     //7.内容包含链接，含http(s)://等的文本自动转化为链接
     <a href="mailto:haha@wtf.com?body=http://www.wtf.com">快来点我啊，给你发种子。</a>
@@ -119,6 +119,15 @@
     //9.完整示例
     <a href="mailto:haha@wtf.com;384900096@wtf.com?cc=666@wtf.com&bcc=993233461@wtf.com&subject=[邮件主题]&body=我是第一行内容%0A%0Ahttp://www.baidu.com%0A%0A<img src='images/1.jpg' />">快来点我啊，给你发种子。</a>
 ```
+
+#### 如何为不定高度(height:auto)的元素添加CSS3 transition-property:height 动画
+* 当一个元素不设置height时，它的默认值是 auto，浏览器会计算出实际的高度。
+* 但如果想给一个 height:auto 的块级元素的高度添加 CSS3 动画时，该怎么办呢？
+* 从 MDN 的可以查到 CSS 支持动画的属性中的 height 属性如下：
+height ：yes, as a length, percentage or calc(); // 当 height 的值是 length，百分比或 calc() 时支持 CSS3 过渡。
+* 所以当元素 height : auto 时，是不支持 CSS3 动画的。
+* 除了通过 JS 获取精确的 height 值的方法外，其实我们可以使用 max-height 代替 height。
+* 只要我们设置一个肯定比元素自增长大的高度值就可以了。当然，因为是根据 max-height 值进行过渡效果，所以最好不要大得离谱，否则动画效果不理想。
 
 ## touch事件
 
@@ -156,8 +165,8 @@
 
 ## 点击元素产生背景或边框问题
 ```css
-    a,button,input,textarea { 
-        -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    a,button,input,textarea {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
         -webkit-user-modify:read-write-plaintext-only; //-webkit-user-modify有个副作用，就是输入法不再能够输入多个字符
     }   
     /*也可以...，简单粗暴*/
@@ -189,9 +198,11 @@
     :-ms-input-placeholder { /* Internet Explorer 10+ */
     color: #999; }
     input:focus::-webkit-input-placeholder{ color:#999; }
-    
+
     /*android上去掉语音输入按钮*/
     input::-webkit-input-speech-button {display: none}
+    /*去掉ios设备上input里的阴影*/
+    input { -webkit-appearance:none; } /* Safari 和 Chrome */
 ```
 使用translate3d代替translate可以自动开启GPU加速渲染
 
@@ -212,7 +223,7 @@
             //竖屏下需要执行代码
         }
     }
-    
+
     orientInit();
     window.addEventListener('onorientationchange' in window?'orientationchange':'resize', function(){
         setTimeout(orientInit, 100);
@@ -232,9 +243,9 @@
     <!--
     1.ios7+支持自动播放
     2.支持Airplay的设备（如：音箱、Apple TV)播放
-    x-webkit-airplay="true" 
+    x-webkit-airplay="true"
     3.播放视频不全屏
-    webkit-playsinline="true" 
+    webkit-playsinline="true"
     -->
     <video x-webkit-airplay="true" webkit-playsinline="true" preload="auto" autoplay src="http://"></video>
 ```
