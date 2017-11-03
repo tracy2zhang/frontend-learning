@@ -72,3 +72,18 @@ add(1, 2)(3, 5) // f 11
 // 4. 但是如果俩都重写，那就好玩了。一般情况都是先调用valueOf
 // 5. 如果valueOf返回一个非原始类型数据，再调用toString，如果toString也返回非原始类型，那就只好报错了
 // 6. 个人已知有两种方式会优先调用toString，一个是直接new String(obj)，另一个是`${obj}`
+
+function timeout (n) {
+  return new Promise(resolve => setTimeout(resolve, n))
+}
+
+async function output (n) {
+  let i
+  for(i = 0; i < n; i++) {
+    console.log(i)
+    await timeout(1000)
+  }
+  return i
+}
+
+output(5).then(console.log)
