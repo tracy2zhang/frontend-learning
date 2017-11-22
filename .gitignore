@@ -38,7 +38,7 @@ jspm_packages
 
 # npm
 /node_modules/
-
+.tern*
 dist/
 .idea/
 test/
