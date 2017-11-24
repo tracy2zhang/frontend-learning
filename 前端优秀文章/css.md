@@ -14,3 +14,4 @@
 
 ## 字体相关
 * [font-display的用法](https://www.w3cplus.com/css/font-display-masses.html)
+* [移动端字体设置最佳实践](http://blog.csdn.net/jayhkw/article/details/54314704)

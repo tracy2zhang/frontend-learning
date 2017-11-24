@@ -9,6 +9,8 @@
 * [面向对象实战之封装拖拽对象](http://www.jianshu.com/p/b3dee0e84454)
 * [详细图解jQuery对象，以及如何扩展jQuery插件](http://www.jianshu.com/p/3f97570d22b4)
 * [深入核心，详解事件循环机制](http://www.jianshu.com/p/12b9f73c5a4f)
+* [JavaScript实现私有属性](https://www.cnblogs.com/ihardcoder/p/4914938.html)
+* [JavaScript 四则运算：加减乘除](http://www.cnblogs.com/weixinyuai/p/4280036.html)
 
 ## ES6/7
 * [ECMAScript 6 入门](http://es6.ruanyifeng.com/#docs/intro)
@@ -19,6 +21,7 @@
 
 ## 性能优化
 * [JavaScript 性能优化杀手](http://web.jobbole.com/83582/)
+* [尾调用优化](http://www.ruanyifeng.com/blog/2015/04/tail-call.html)
 
 ## 设计模式
 * [Javascript常用的设计模式详解](http://web.jobbole.com/85136/)
