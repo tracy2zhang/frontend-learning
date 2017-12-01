@@ -9,3 +9,6 @@
 * [资源预加载](http://web.jobbole.com/84256/)
 * [localStorage的黑科技-js和css缓存机制](http://web.jobbole.com/90167/)
 * [提升HTML5的性能体验系列](http://ask.dcloud.net.cn/article/25)
+
+## 视频相关
+* [视频H5のVideo标签在微信里的坑和技巧](https://aotu.io/notes/2017/01/11/mobile-video/index.html)
