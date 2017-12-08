@@ -11,6 +11,8 @@
 * [深入核心，详解事件循环机制](http://www.jianshu.com/p/12b9f73c5a4f)
 * [JavaScript实现私有属性](https://www.cnblogs.com/ihardcoder/p/4914938.html)
 * [JavaScript 四则运算：加减乘除](http://www.cnblogs.com/weixinyuai/p/4280036.html)
+* [理解Object.defineProperty的作用](https://segmentfault.com/a/1190000007434923)
+* [js中的Object.defineProperty()和defineProperties()](https://segmentfault.com/a/1190000011294519#articleHeader18)
 
 ## ES6/7
 * [ECMAScript 6 入门](http://es6.ruanyifeng.com/#docs/intro)
