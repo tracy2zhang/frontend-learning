@@ -3,6 +3,7 @@
 
 ## BFC
 * [理解CSS中BFC](https://www.w3cplus.com/css/understanding-block-formatting-contexts-in-css.html)
+* [CSS: 潜藏着的BFC](https://segmentfault.com/a/1190000012221820)
 * [什么是BFC](http://web.jobbole.com/84808/)
 * [BFC 神奇背后的原理](https://www.cnblogs.com/lhb25/p/inside-block-formatting-ontext.html)
 
@@ -16,3 +17,15 @@
 ## 字体相关
 * [font-display的用法](https://www.w3cplus.com/css/font-display-masses.html)
 * [移动端字体设置最佳实践](http://blog.csdn.net/jayhkw/article/details/54314704)
+
+## 实用技巧
+* [如何用 CSS 修出好看的照片](https://qianduan.group/posts/5a1d2968485c1a4c84948cc0)
+* [灵活的 overflow](http://web.jobbole.com/93208/)
+
+## CSS in JS
+* [JavaScript 中的 CSS：基于组件的样式的未来](http://web.jobbole.com/93178/)
+* [aphrodite](https://github.com/Khan/aphrodite)
+
+## CSS优化
+* [使用CSS3 will-change提高页面滚动、动画等渲染性能](http://www.zhangxinxu.com/wordpress/2015/11/css3-will-change-improve-paint/)
+* [CSS3硬件加速也有坑！！！](https://www.tuicool.com/articles/b2uQJ3)

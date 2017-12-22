@@ -2,6 +2,9 @@
 * [HTML5 游戏开发基础的教程](http://web.jobbole.com/90798/?utm_source=blog.jobbole.com&utm_medium=relatedPosts)
 * [H5 游戏开发：横屏适配](http://web.jobbole.com/92867/?utm_source=blog.jobbole.com&utm_medium=relatedPosts)
 
+## 本地存储
+* [indexedDB 基本使用](http://web.jobbole.com/93303/)
+
 ## 适配
 * [iPhone X 适配手Q H5 页面通用解决方案](http://web.jobbole.com/92991/)
 
@@ -12,3 +15,16 @@
 
 ## 视频相关
 * [视频H5のVideo标签在微信里的坑和技巧](https://aotu.io/notes/2017/01/11/mobile-video/index.html)
+
+## 安全
+* [XSS的原理分析与解剖](http://www.freebuf.com/articles/web/40520.html)
+* [聊一聊web前端安全那些事儿](https://www.imooc.com/article/20522)
+
+## 推荐书籍
+* [经典前端技术书籍](http://web.jobbole.com/86734/)
+
+## 面试
+* [从浏览器地址栏输入url到显示页面的步骤(以HTTP为例)](https://www.imooc.com/article/21726)
+* [阿里、网易、滴滴共十次前端面试碰到的问题](http://web.jobbole.com/91429/)
+* [火爆：2017面试最新整理（1）](https://www.imooc.com/article/20692)
+* [火爆：2017面试最新整理（2）](https://www.imooc.com/article/20693)

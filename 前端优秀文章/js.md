@@ -27,3 +27,10 @@
 
 ## 设计模式
 * [Javascript常用的设计模式详解](http://web.jobbole.com/85136/)
+
+## ajax
+* [你真的会使用XMLHttpRequest吗？](https://segmentfault.com/a/1190000004322487)
+* [ajax跨域，这应该是最全的解决方案了](https://segmentfault.com/a/1190000012469713)
+
+## 使用技巧
+* [30 seconds of code](https://github.com/Chalarangelo/30-seconds-of-code#anagrams-of-string-with-duplicates)
