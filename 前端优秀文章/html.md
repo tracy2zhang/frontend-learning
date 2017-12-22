@@ -13,6 +13,10 @@
 * [localStorage的黑科技-js和css缓存机制](http://web.jobbole.com/90167/)
 * [提升HTML5的性能体验系列](http://ask.dcloud.net.cn/article/25)
 
+## 动画相关
+* [Web 动画帧率（FPS）计算](http://web.jobbole.com/93325/)
+* [盒子端 CSS 动画性能提升研究](http://web.jobbole.com/93258/)
+
 ## 视频相关
 * [视频H5のVideo标签在微信里的坑和技巧](https://aotu.io/notes/2017/01/11/mobile-video/index.html)
 

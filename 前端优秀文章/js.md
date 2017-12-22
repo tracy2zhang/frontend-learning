@@ -22,8 +22,16 @@
 * [用 Vue 做一个酷炫的 menu](http://web.jobbole.com/93076/)
 
 ## 性能优化
+* [JavaScript 的时间消耗](https://github.com/dwqs/blog/issues/59)
+* [JavaScript 性能优化的小知识总结](http://www.cnblogs.com/liyunhua/p/4529086.html)
 * [JavaScript 性能优化杀手](http://web.jobbole.com/83582/)
 * [尾调用优化](http://www.ruanyifeng.com/blog/2015/04/tail-call.html)
+* [JavaScript 性能优化技巧分享](http://web.jobbole.com/93286/)
+* [看完离编写高性能的JavaScript又近了一步](https://segmentfault.com/a/1190000012283254)
+
+## 模块化
+* [很全很全的JavaScript的模块讲解](https://segmentfault.com/a/1190000012464333)
+* [JavaScript模块化 --- Commonjs、AMD、CMD、ES6 modules](https://www.imooc.com/article/20057)
 
 ## 设计模式
 * [Javascript常用的设计模式详解](http://web.jobbole.com/85136/)
