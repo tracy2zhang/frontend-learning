@@ -17,8 +17,9 @@
 * [Web 动画帧率（FPS）计算](http://web.jobbole.com/93325/)
 * [盒子端 CSS 动画性能提升研究](http://web.jobbole.com/93258/)
 
-## 视频相关
+## 视频、音频相关
 * [视频H5のVideo标签在微信里的坑和技巧](https://aotu.io/notes/2017/01/11/mobile-video/index.html)
+* [HTML5 录音的踩坑之旅](http://web.jobbole.com/93423/)
 
 ## 安全
 * [XSS的原理分析与解剖](http://www.freebuf.com/articles/web/40520.html)

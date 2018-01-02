@@ -13,6 +13,7 @@
 * [JavaScript 四则运算：加减乘除](http://www.cnblogs.com/weixinyuai/p/4280036.html)
 * [理解Object.defineProperty的作用](https://segmentfault.com/a/1190000007434923)
 * [js中的Object.defineProperty()和defineProperties()](https://segmentfault.com/a/1190000011294519#articleHeader18)
+* [JS进阶 - JS 之Blob 对象类型](http://blog.csdn.net/oscar999/article/details/36373183)
 
 ## ES6/7
 * [ECMAScript 6 入门](http://es6.ruanyifeng.com/#docs/intro)
@@ -28,6 +29,7 @@
 * [尾调用优化](http://www.ruanyifeng.com/blog/2015/04/tail-call.html)
 * [JavaScript 性能优化技巧分享](http://web.jobbole.com/93286/)
 * [看完离编写高性能的JavaScript又近了一步](https://segmentfault.com/a/1190000012283254)
+* [“懒”的妙用——浅析图片懒加载技术](http://web.jobbole.com/93431/)
 
 ## 模块化
 * [很全很全的JavaScript的模块讲解](https://segmentfault.com/a/1190000012464333)

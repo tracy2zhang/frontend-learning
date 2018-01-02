@@ -9,6 +9,7 @@
 
 ## IFC
 * [行内格式化上下文(Inline formatting contexts)](https://segmentfault.com/a/1190000009308818)
+* [CSS > 行内格式化上下文中的各种高度计算](https://segmentfault.com/a/1190000003834571)
 
 ## 精选博客
 * [一些有趣的CSS项目](https://github.com/chokcoco/iCSS/issues)

@@ -4,3 +4,6 @@
 
 ## SSR
 * [Vue 项目 SSR 改造实战](https://segmentfault.com/a/1190000012440041)
+
+## 多页面
+[多页应用脚手架](https://github.com/Plortinus/vue-multiple-pages)
