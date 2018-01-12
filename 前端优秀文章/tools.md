@@ -4,3 +4,6 @@
 
 ### parcel
 * [Parcel 中文文档](http://www.itbaby.me/doc/parcel/)
+
+### babel
+* [如何写好.babelrc？Babel的presets和plugins配置解析](https://excaliburhan.com/post/babel-preset-and-plugins.html)
