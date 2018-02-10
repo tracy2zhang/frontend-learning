@@ -10,3 +10,6 @@
 
 ### 插件
 [10分钟教你快速开发一个vue插件并发布npm](https://www.imooc.com/article/19691)
+
+### 原理
+[vue的双向绑定原理及实现](https://www.cnblogs.com/canfoo/p/6891868.html)

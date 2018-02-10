@@ -203,6 +203,12 @@ height ：yes, as a length, percentage or calc(); // 当 height 的值是 length
     input::-webkit-input-speech-button {display: none}
     /*去掉ios设备上input里的阴影*/
     input { -webkit-appearance:none; } /* Safari 和 Chrome */
+    /* 去掉input[type=number]浏览器自带的上下箭头 */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none !important;
+      margin: 0;
+    }
 ```
 使用translate3d代替translate可以自动开启GPU加速渲染
 
