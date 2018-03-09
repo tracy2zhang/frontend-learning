@@ -61,3 +61,29 @@ console.time('quicksort2')
 arr3 = quicksort2(arr3)
 console.timeEnd('quicksort2')
 console.log(arr3)
+
+
+Array.prototype.sort = function () {
+  var stack = [];
+  stack.push([0, this.length - 1]);
+  while(stack.length) {
+    var _ = stack.pop(),
+        i = _[0], l = _[0],
+        j = _[1], r = _[1],
+        mid = this[Math.floor((i + j)/2)]
+    do {
+      while(this[i] < mid) i++
+      while(this[j] > mid) j--
+      if (i <= j) {
+        var temp = this[i];
+        this[i] = this[j];
+        this[j] = temp;
+        i++;
+        j--;
+      }
+    } while(i <= j);
+    if (i < r) stack.push([i, r]);
+    if (l < j) stack.push([l, j])
+  }
+  return this
+}
