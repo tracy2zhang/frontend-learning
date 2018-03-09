@@ -6,3 +6,6 @@
 * [JS实现各种排序算法以及时间复杂度](http://blog.csdn.net/supercoooooder/article/details/52153923)
 * [js面试算法](http://blog.csdn.net/crystal6918/article/details/60955989)
 * [前端常见算法的JS实现](https://segmentfault.com/a/1190000008593715)
+
+## 动态规划
+* [动态规划算法解LCS问题](http://blog.csdn.net/v_JULY_v/article/details/6110269)
