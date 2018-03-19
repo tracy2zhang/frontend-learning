@@ -30,6 +30,7 @@
 ## CSS优化
 * [使用CSS3 will-change提高页面滚动、动画等渲染性能](http://www.zhangxinxu.com/wordpress/2015/11/css3-will-change-improve-paint/)
 * [CSS3硬件加速也有坑！！！](https://www.tuicool.com/articles/b2uQJ3)
+* [高性能JavaScript 重排与重绘](http://web.jobbole.com/83164/)
 
 ## 移动端适配
 [分享手淘过年项目中采用到的前端技术](http://web.jobbole.com/94049/)

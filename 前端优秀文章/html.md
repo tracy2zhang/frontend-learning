@@ -30,6 +30,7 @@
 
 ## 面试
 * [从浏览器地址栏输入url到显示页面的步骤(以HTTP为例)](https://www.imooc.com/article/21726)
+* [从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系！](http://www.cnblogs.com/dailc/p/8547384.html#3922305)
 * [阿里、网易、滴滴共十次前端面试碰到的问题](http://web.jobbole.com/91429/)
 * [火爆：2017面试最新整理（1）](https://www.imooc.com/article/20692)
 * [火爆：2017面试最新整理（2）](https://www.imooc.com/article/20693)
