@@ -34,6 +34,7 @@
 ## 模块化
 * [很全很全的JavaScript的模块讲解](https://segmentfault.com/a/1190000012464333)
 * [JavaScript模块化 --- Commonjs、AMD、CMD、ES6 modules](https://www.imooc.com/article/20057)
+* [图说 ES Modules](https://segmentfault.com/a/1190000014318751?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly)
 
 ## 设计模式
 * [Javascript常用的设计模式详解](http://web.jobbole.com/85136/)

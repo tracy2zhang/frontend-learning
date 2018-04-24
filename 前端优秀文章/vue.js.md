@@ -13,3 +13,4 @@
 
 ### 原理
 [vue的双向绑定原理及实现](https://www.cnblogs.com/canfoo/p/6891868.html)
+[Vue.js最佳实践（五招让你成为Vue.js大师）](https://segmentfault.com/a/1190000014085613)

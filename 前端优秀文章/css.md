@@ -34,3 +34,6 @@
 
 ## 移动端适配
 [分享手淘过年项目中采用到的前端技术](http://web.jobbole.com/94049/)
+
+## 特效
+[CSS如何实现内凹角效果](https://www.w3cplus.com/css/scooped-corners.html)

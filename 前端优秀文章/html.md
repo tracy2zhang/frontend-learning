@@ -4,6 +4,7 @@
 
 ## 本地存储
 * [indexedDB 基本使用](http://web.jobbole.com/93303/)
+* [使用localstorage代替cookie实现跨域共享数据](https://zhuanlan.zhihu.com/p/35738376)
 
 ## 适配
 * [iPhone X 适配手Q H5 页面通用解决方案](http://web.jobbole.com/92991/)
