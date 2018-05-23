@@ -45,3 +45,6 @@
 
 ## 使用技巧
 * [30 seconds of code](https://github.com/Chalarangelo/30-seconds-of-code#anagrams-of-string-with-duplicates)
+
+## 特效
+* [JavaScript实现爆炸碎片的 图片切换 效果](https://segmentfault.com/a/1190000014840539)

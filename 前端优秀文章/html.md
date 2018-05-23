@@ -35,3 +35,6 @@
 * [阿里、网易、滴滴共十次前端面试碰到的问题](http://web.jobbole.com/91429/)
 * [火爆：2017面试最新整理（1）](https://www.imooc.com/article/20692)
 * [火爆：2017面试最新整理（2）](https://www.imooc.com/article/20693)
+
+## 疑难杂症
+* [关于input的一些问题解决方法分享](https://segmentfault.com/a/1190000014843602)
