@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Testing min-width and max-width</title>
+    <style type="text/css">
+      .line {
+        height: 2px;
+        background-color: #000;
+        width: 0;
+        transition: width .5s;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="line"></div>
+    <button class="add" type="button" name="button">add</button>
+    <canvas id="cnv"></canvas>
+    <script type="text/javascript" charset="utf-8">
+      cnv = document.getElementById("cnv");
+      cnv.width = 500;
+      cnv.height = 300;
+      ctx = cnv.getContext("2d");
+      ctx.font = "bold 12px sans-serif";
+      text = "abcdefghijklm"
+      for (i = 0; i < text.length; i++) {
+        ctx.fillText(text[i], 300, 100);
+        ctx.rotate(0.1);
+      }
+
+      const line = document.querySelector('.line')
+      const add = document.querySelector('.add')
+      add.addEventListener('click', e => {
+        line.style.width = line.clientWidth + 100 + 'px'
+      })
+
+    </script>
+  </body>
+</html>

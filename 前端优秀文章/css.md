@@ -34,6 +34,7 @@
 
 ## 移动端适配
 [分享手淘过年项目中采用到的前端技术](http://web.jobbole.com/94049/)
+[茴字的四种写法—移动适配方案的进化](https://segmentfault.com/a/1190000014309664?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly)
 
 ## 特效
 [CSS如何实现内凹角效果](https://www.w3cplus.com/css/scooped-corners.html)

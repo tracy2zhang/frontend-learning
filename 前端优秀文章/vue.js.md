@@ -6,11 +6,12 @@
 * [Vue 项目 SSR 改造实战](https://segmentfault.com/a/1190000012440041)
 
 ### 多页面
-[多页应用脚手架](https://github.com/Plortinus/vue-multiple-pages)
+* [多页应用脚手架](https://github.com/Plortinus/vue-multiple-pages)
 
 ### 插件
-[10分钟教你快速开发一个vue插件并发布npm](https://www.imooc.com/article/19691)
+* [10分钟教你快速开发一个vue插件并发布npm](https://www.imooc.com/article/19691)
 
 ### 原理
-[vue的双向绑定原理及实现](https://www.cnblogs.com/canfoo/p/6891868.html)
-[Vue.js最佳实践（五招让你成为Vue.js大师）](https://segmentfault.com/a/1190000014085613)
+* [vue生命周期深入](https://segmentfault.com/a/1190000014705819)
+* [vue的双向绑定原理及实现](https://www.cnblogs.com/canfoo/p/6891868.html)
+* [Vue.js最佳实践（五招让你成为Vue.js大师）](https://segmentfault.com/a/1190000014085613)

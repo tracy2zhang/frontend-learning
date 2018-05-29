@@ -18,6 +18,7 @@
 ## ES6/7
 * [ECMAScript 6 入门](http://es6.ruanyifeng.com/#docs/intro)
 * [深入浅出ES6](http://www.infoq.com/cn/es6-in-depth/)
+* [你点的ES6小技巧，请查收](https://segmentfault.com/a/1190000013972464)
 
 ## Vue.js
 * [用 Vue 做一个酷炫的 menu](http://web.jobbole.com/93076/)
@@ -45,3 +46,6 @@
 
 ## 使用技巧
 * [30 seconds of code](https://github.com/Chalarangelo/30-seconds-of-code#anagrams-of-string-with-duplicates)
+
+## Promise
+* [从使用角度渐进式剖析Promise源码](https://segmentfault.com/a/1190000014368256?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly)

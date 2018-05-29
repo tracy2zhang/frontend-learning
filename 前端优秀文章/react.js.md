@@ -9,3 +9,9 @@
 
 ### 配置
 * [在基于 create-react-app 的React项目中进行代码分片、按需加载（code splitting）/ 免webpack配置](http://blog.csdn.net/Beijiyang999/article/details/78591398)
+
+### 源码分析
+[窥探React-源码分析](http://web.jobbole.com/94414/)
+
+### 进阶
+[【React进阶系列】从零开始手把手教你实现一个Virtual DOM](https://segmentfault.com/a/1190000014572815)

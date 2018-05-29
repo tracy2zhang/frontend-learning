@@ -4,6 +4,7 @@
 * [webpack学习](https://segmentfault.com/a/1190000007359645)
 * [深入理解 webpack 文件打包机制](https://github.com/happylindz/blog/issues/6)
 * [深入浅出 Webpack](http://webpack.wuhaolin.cn/)
+* [借助webpack对项目进行分析优化](https://segmentfault.com/a/1190000014369413)
 
 ### parcel
 * [Parcel 中文文档](http://www.itbaby.me/doc/parcel/)
