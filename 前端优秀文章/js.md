@@ -49,3 +49,6 @@
 
 ## Promise
 * [从使用角度渐进式剖析Promise源码](https://segmentfault.com/a/1190000014368256?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly)
+
+## 特效
+* [JavaScript实现爆炸碎片的 图片切换 效果](https://segmentfault.com/a/1190000014840539)
