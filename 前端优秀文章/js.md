@@ -19,6 +19,7 @@
 * [ECMAScript 6 入门](http://es6.ruanyifeng.com/#docs/intro)
 * [深入浅出ES6](http://www.infoq.com/cn/es6-in-depth/)
 * [你点的ES6小技巧，请查收](https://segmentfault.com/a/1190000013972464)
+* [拿Proxy可以做哪些有意思的事儿](https://segmentfault.com/a/1190000015009255)
 
 ## Vue.js
 * [用 Vue 做一个酷炫的 menu](http://web.jobbole.com/93076/)
@@ -36,6 +37,7 @@
 * [很全很全的JavaScript的模块讲解](https://segmentfault.com/a/1190000012464333)
 * [JavaScript模块化 --- Commonjs、AMD、CMD、ES6 modules](https://www.imooc.com/article/20057)
 * [图说 ES Modules](https://segmentfault.com/a/1190000014318751?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly)
+* [JavaScript Module 设计解析及总结](https://github.com/simbawus/blog/issues/5)
 
 ## 设计模式
 * [Javascript常用的设计模式详解](http://web.jobbole.com/85136/)

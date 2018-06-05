@@ -1,3 +1,5 @@
+* [JavaScript 算法与数据结构](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)
+
 ## 排序
 * [快速排序（Quicksort）的Javascript实现](http://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html)
 * [JavaScript 中常见排序算法详解](http://web.jobbole.com/93060/)

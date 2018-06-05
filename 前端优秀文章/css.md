@@ -1,5 +1,9 @@
 ## 布局
 * [CSS 三种定位方式以及格式化上下文详解](http://www.html5jscss.com/box-context.html)
+* [CSS系列——CSS深入理解之float浮动](https://segmentfault.com/a/1190000014554601)
+* [CSS系列——CSS深入理解之relative定位](https://segmentfault.com/a/1190000014877050)
+* [CSS系列——CSS深入理解之absolute定位](https://segmentfault.com/a/1190000014736711)
+* [Vertical-Align，你应该知道的一切](https://zcfy.cc/article/vertical-align-all-you-need-to-know)
 
 ## BFC
 * [理解CSS中BFC](https://www.w3cplus.com/css/understanding-block-formatting-contexts-in-css.html)
@@ -39,3 +43,6 @@
 ## 特效
 * [CSS如何实现内凹角效果](https://www.w3cplus.com/css/scooped-corners.html)
 * [Codepen 每周精选：不能错过的23个页面特效（2018-5-14）](https://segmentfault.com/a/1190000014842970)
+
+## 杂谈
+* [理解 CSS3 transform 中的 matrix](https://fanmingfei.com/posts/CSS3_Transform_Matrix_Intro.html)
