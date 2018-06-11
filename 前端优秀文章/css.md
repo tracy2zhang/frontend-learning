@@ -4,6 +4,7 @@
 * [CSS系列——CSS深入理解之relative定位](https://segmentfault.com/a/1190000014877050)
 * [CSS系列——CSS深入理解之absolute定位](https://segmentfault.com/a/1190000014736711)
 * [Vertical-Align，你应该知道的一切](https://zcfy.cc/article/vertical-align-all-you-need-to-know)
+* [CSS魔法堂：Flex布局](https://segmentfault.com/a/1190000015166869)
 
 ## BFC
 * [理解CSS中BFC](https://www.w3cplus.com/css/understanding-block-formatting-contexts-in-css.html)
@@ -26,6 +27,7 @@
 ## 实用技巧
 * [如何用 CSS 修出好看的照片](https://qianduan.group/posts/5a1d2968485c1a4c84948cc0)
 * [灵活的 overflow](http://web.jobbole.com/93208/)
+* [【CSS进阶】box-shadow 与 filter:drop-shadow 详解及奇技淫巧](http://web.jobbole.com/86469/)
 
 ## CSS in JS
 * [JavaScript 中的 CSS：基于组件的样式的未来](http://web.jobbole.com/93178/)
@@ -43,6 +45,8 @@
 ## 特效
 * [CSS如何实现内凹角效果](https://www.w3cplus.com/css/scooped-corners.html)
 * [Codepen 每周精选：不能错过的23个页面特效（2018-5-14）](https://segmentfault.com/a/1190000014842970)
+* [magic css](http://sbco.cc/magicCss/html/index.html)
+* [前端每日实战](https://segmentfault.com/blog/codepen?page=3)
 
 ## 杂谈
 * [理解 CSS3 transform 中的 matrix](https://fanmingfei.com/posts/CSS3_Transform_Matrix_Intro.html)

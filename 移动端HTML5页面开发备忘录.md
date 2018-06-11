@@ -90,6 +90,17 @@
     body { font-family: Microsoft Yahei,SimSun,Helvetica; }
 ```
 
+#### 关于 iOS 与 OS X 端字体的优化(横竖屏会出现字体加粗不一致等)
+iOS 浏览器横屏时会重置字体大小，设置 text-size-adjust 为 none 可以解决 iOS 上的问题，但桌面版 Safari 的字体缩放功能会失效，因此最佳方案是将 text-size-adjust 为 100% 。
+
+```css
+  div {
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+    text-size-adjust:100%;
+  }
+```
+
 #### 打电话发短信写邮件
 ```html
     // 打电话
@@ -208,6 +219,13 @@ height ：yes, as a length, percentage or calc(); // 当 height 的值是 length
     input::-webkit-inner-spin-button {
       -webkit-appearance: none !important;
       margin: 0;
+    }
+    /* input 的placeholder属性会使文本位置偏上 */
+    input {
+      /* （和input框的高度一样高）---pc端解决方法 */
+      line-height: 1;
+      /* 移动端解决方法 */
+      line-height：normal;
     }
 ```
 使用translate3d代替translate可以自动开启GPU加速渲染
