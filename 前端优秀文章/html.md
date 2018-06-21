@@ -21,6 +21,7 @@
 ## 视频、音频相关
 * [视频H5のVideo标签在微信里的坑和技巧](https://aotu.io/notes/2017/01/11/mobile-video/index.html)
 * [HTML5 录音的踩坑之旅](http://web.jobbole.com/93423/)
+* [视频播放--踩坑小计](https://github.com/ProtoTeam/blog/blob/master/201806/1.md)
 
 ## 安全
 * [XSS的原理分析与解剖](http://www.freebuf.com/articles/web/40520.html)

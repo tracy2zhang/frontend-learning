@@ -15,3 +15,4 @@
 
 ## babel
 * [如何写好.babelrc？Babel的presets和plugins配置解析](https://excaliburhan.com/post/babel-preset-and-plugins.html)
+* [Babel 插件开发入门指南](http://web.jobbole.com/94758/)
