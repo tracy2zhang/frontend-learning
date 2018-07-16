@@ -13,6 +13,7 @@
 * [资源预加载](http://web.jobbole.com/84256/)
 * [localStorage的黑科技-js和css缓存机制](http://web.jobbole.com/90167/)
 * [提升HTML5的性能体验系列](http://ask.dcloud.net.cn/article/25)
+* [前端性能优化 -- 从 10 多秒到 1.05 秒](https://segmentfault.com/a/1190000015052545)
 
 ## 动画相关
 * [Web 动画帧率（FPS）计算](http://web.jobbole.com/93325/)

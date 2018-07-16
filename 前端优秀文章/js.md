@@ -32,6 +32,7 @@
 * [JavaScript 性能优化技巧分享](http://web.jobbole.com/93286/)
 * [看完离编写高性能的JavaScript又近了一步](https://segmentfault.com/a/1190000012283254)
 * [“懒”的妙用——浅析图片懒加载技术](http://web.jobbole.com/93431/)
+* [【前端性能优化】高性能JavaScript整理总结](https://segmentfault.com/a/1190000013963213)
 
 ## 模块化
 * [很全很全的JavaScript的模块讲解](https://segmentfault.com/a/1190000012464333)
