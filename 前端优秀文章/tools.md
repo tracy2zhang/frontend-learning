@@ -9,6 +9,9 @@
 * [Webpack 打包优化之体积篇](https://jeffjade.com/2017/08/06/124-webpack-packge-optimization-for-volume/)
 * [Webpack 打包优化之速度篇](https://jeffjade.com/2017/08/12/125-webpack-package-optimization-for-speed/)
 * [webpack4升级完全指南](https://segmentfault.com/a/1190000014247030)
+* [webpack源码之运行流程](https://segmentfault.com/a/1190000014221014)
+* [Webpack实战 - 使用动态 entry 改善调试体验](https://segmentfault.com/a/1190000008055046?utm_source=tuicool&utm_medium=referral)
+* [Separating a Manifest](https://survivejs.com/webpack/optimizing/separating-manifest/)
 
 ## parcel
 * [Parcel 中文文档](http://www.itbaby.me/doc/parcel/)
