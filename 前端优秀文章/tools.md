@@ -12,6 +12,7 @@
 * [webpack源码之运行流程](https://segmentfault.com/a/1190000014221014)
 * [Webpack实战 - 使用动态 entry 改善调试体验](https://segmentfault.com/a/1190000008055046?utm_source=tuicool&utm_medium=referral)
 * [Separating a Manifest](https://survivejs.com/webpack/optimizing/separating-manifest/)
+* [code-splitting-with-splitchunksplugin-in-webpack-4](https://wanago.io/2018/06/04/code-splitting-with-splitchunksplugin-in-webpack-4/)
 
 ## parcel
 * [Parcel 中文文档](http://www.itbaby.me/doc/parcel/)
