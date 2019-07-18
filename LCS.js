@@ -37,3 +37,56 @@ function lcsWithTime (str1, str2) {
   console.log(lcs2(str1, str2))
   console.timeEnd('lcs2')
 }
+
+function max(arr, total, level = 1) {
+  let tempMax = 0;
+  const maxArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < total) {
+      let r = arr[i] + max(arr, total - arr[i], level + 1)
+      if (r > tempMax) {
+        tempMax = r;
+        maxArr.length = 0;
+      } else if (r === tempMax) {
+        maxArr.push(arr[i])
+      }
+    } else if (arr[i] === total) {
+      console.log(arr[i], level)
+      return total
+    }
+  }
+  if (maxArr.length) {
+    console.log(maxArr, level)
+  }
+}
+
+function lcs3 (str1, str2) {
+  str1 = [...str1];
+  str2 = [...str2];
+  let max = 0;
+  let index = 0;
+  const dp = [];
+  for(let i = 0; i <= str1.length; i++) {
+    dp[i] = []
+    for (let j = 0; j <= str2.length; j++) {
+      if (i === 0 || j === 0) {
+        dp[i][j] = 0;
+      } else {
+        if (str1[i-1] === str2[j-1]) {
+          dp[i][j] = (dp[i-1][j-1] || 0) + 1
+        } else {
+          dp[i][j] = 0;
+        }
+      }
+      if (max < dp[i][j]) {
+        max = dp[i][j];
+        index = i;
+      }
+    }
+  }
+  let str = '';
+  for (let k = index - max; k < index; k++) {
+    str += str1[k];
+  }
+  return str;
+}
