@@ -9,10 +9,20 @@
     html, body {
       background: rgba(255, 255, 255, 0.1);
     }
+    .fps {
+      position: fixed;
+      right: 10px;
+      top: 10px;
+      color: rgb(0, 119, 255);
+      font-size: 16px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
   <canvas id="bouncing-balls"></canvas>
+  <script src="../utils/ball.js"></script>
   <script src="./index.js"></script>
+  <script src="../utils/realtime-frame.js"></script>
 </body>
 </html>

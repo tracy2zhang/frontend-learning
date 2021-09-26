@@ -6,7 +6,7 @@ function randomIntBetween (a, b) {
   return Math.round(randomFloatBetween(a, b))
 }
 
-const canvas = document.getElementById('bouncing-balls')
+const canvas = document.getElementById('spin-lines')
 
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight

@@ -3,9 +3,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>spin lines</title>
+  <title>bouncing balls dom</title>
   <link rel="stylesheet" href="../reset.css">
   <style>
+    html, body {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .ball {
+      position: fixed;
+      border-radius: 50%;
+    }
     .fps {
       position: fixed;
       right: 10px;
@@ -17,7 +24,7 @@
   </style>
 </head>
 <body>
-  <canvas id="spin-lines"></canvas>
+  <script src="./ball.js"></script>
   <script src="./index.js"></script>
   <script src="../utils/realtime-frame.js"></script>
 </body>
