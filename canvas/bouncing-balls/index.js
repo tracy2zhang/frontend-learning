@@ -1,3 +1,22 @@
+function getUrlParam(name){
+  var reg = new RegExp("(^|&)"+name+"=([^&]*)(&|$)");
+  var r =  window.location.search.substr(1).match(reg);
+  var strValue = "";
+  if (r!=null){
+   strValue= unescape(r[2]);
+  }
+  return strValue
+}
+
+let blur = false
+window.addEventListener('keydown', e => {
+  if (e.key === 's') {
+    blur = !blur;
+  }
+})
+
+const count = +getUrlParam('count') || 100
+
 const canvas = document.getElementById('bouncing-balls')
 
 canvas.width = window.innerWidth
@@ -67,7 +86,7 @@ function getBall () {
   })
 }
 
-for (let i = 0; i < 500; i++) {
+for (let i = 0; i < count; i++) {
   const ball = getBall();
   balls.push(ball);
 }
@@ -77,9 +96,12 @@ balls.forEach((ball, i) => {
   ball.draw();
 });
 function animate () {
-  // ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = 'rgba(255,255,255,0.3)'
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  if (blur) {
+    ctx.fillStyle = 'rgba(255,255,255,0.3)'
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+  } else {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
   balls.forEach((ball, i) => {
     ball.update();
   });

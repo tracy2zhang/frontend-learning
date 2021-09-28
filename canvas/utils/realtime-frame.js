@@ -29,7 +29,7 @@ var loop = function () {
 
   if (now > 1000 + lastTime) {
       var fps = Math.round((frame * 1000) / (now - lastTime));
-      console.log(`${new Date()} FPS：`, fps);
+      // console.log(`${new Date()} FPS：`, fps);
       fpsEle.innerHTML = fps
       frame = 0;
       lastTime = now;

@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图片滤镜</title>
+  <link rel="stylesheet" href="../reset.css">
+  <style>
+    html {
+      padding: 20px;
+    }
+    #canvas {
+      /* position: fixed;
+      left: 0;
+      right: 0;
+      visibility: hidden; */
+      border: 1px solid #eee;
+      margin: 20px 0;
+    }
+    .btns {
+      margin: 0 0 20px;
+    }
+    .btns button {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <input type="file" name="file" id="upload">
+  <br>
+  <canvas id="canvas" width="200" height="200"></canvas>
+  <div class="btns">
+    <button id="blur">模糊</button>
+    <button id="grayscale">灰化</button>
+    <button id="sepia">复古</button>
+    <button id="brightness">明亮</button>
+    <button id="threshold">阈值</button>
+    <button id="relief">浮雕</button>
+    <button id="negative">底片</button>
+  </div>
+  <img id="image" alt="">
+  <script src="./filter.js"></script>
+  <script>
+    const file = document.getElementById('upload');
+    const canvas = document.getElementById('canvas');
+    const image = document.getElementById('image');
+    const context = canvas.getContext('2d');
+    let imageData = null;
+
+    function getImageData () {
+      return context.getImageData(0, 0, canvas.width, canvas.height)
+    }
+
+    function canvas2DataUrl() {
+      return canvas.toDataURL('image/jpeg', 0.8);
+    }
+
+    file.addEventListener('change', e => {
+      const f = e.target.files[0];
+      const img = new Image();
+      img.src = URL.createObjectURL(f);
+      img.onload = () => {
+        canvas.height = img.height / img.width * 200;
+        context.drawImage(img, 0, 0, canvas.width, canvas.height);
+        imageData = getImageData();
+      }
+    })
+
+    function generateImage (data) {
+      context.putImageData(data, 0, 0);
+      image.src = canvas2DataUrl();
+      context.putImageData(imageData, 0, 0);
+    }
+
+    function blur() {
+      const data = gaussBlur(getImageData(), 20);
+      generateImage(data)
+    }
+    function grayscale () {
+      const data = getImageData();
+      for (let i = 0, len = data.data.length; i < len; i+=4){
+        canvasFilter.grayscale(data.data , i);
+      }
+      generateImage(data)
+    }
+    function sepia () {
+      const data = getImageData();
+      for (let i = 0, len = data.data.length; i < len; i+=4){
+        canvasFilter.sepia(data.data , i);
+      }
+      generateImage(data)
+    }
+    function brightness () {
+      const data = getImageData();
+      for (let i = 0, len = data.data.length; i < len; i+=4){
+        canvasFilter.brightness(data.data , i, 100);
+      }
+      generateImage(data)
+    }
+    function threshold () {
+      const data = getImageData();
+      for (let i = 0, len = data.data.length; i < len; i+=4){
+        canvasFilter.threshold(data.data , i, 150);
+      }
+      generateImage(data)
+    }
+    function relief () {
+      const data = getImageData();
+      for (let i = 0, len = data.data.length; i < len; i+=4){
+        canvasFilter.relief(data.data , i, canvas);
+      }
+      generateImage(data)
+    }
+    function negative () {
+      const data = getImageData();
+      for (let i = 0, len = data.data.length; i < len; i+=4){
+        canvasFilter.negative(data.data , i, canvas);
+      }
+      generateImage(data)
+    }
+
+    const blurBtn = document.getElementById('blur')
+    const grayscaleBtn = document.getElementById('grayscale')
+    const sepiaBtn = document.getElementById('sepia')
+    const brightnessBtn = document.getElementById('brightness')
+    const thresholdBtn = document.getElementById('threshold')
+    const reliefBtn = document.getElementById('relief')
+    const negativeBtn = document.getElementById('negative')
+    blurBtn.addEventListener('click', blur)
+    grayscaleBtn.addEventListener('click', grayscale)
+    sepiaBtn.addEventListener('click', sepia)
+    brightnessBtn.addEventListener('click', brightness)
+    thresholdBtn.addEventListener('click', threshold)
+    reliefBtn.addEventListener('click', relief)
+    negativeBtn.addEventListener('click', negative)
+  </script>
+</body>
+</html>

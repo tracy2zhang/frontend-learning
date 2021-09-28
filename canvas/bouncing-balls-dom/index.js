@@ -1,3 +1,15 @@
+function getUrlParam(name){
+  var reg = new RegExp("(^|&)"+name+"=([^&]*)(&|$)");
+  var r =  window.location.search.substr(1).match(reg);
+  var strValue = "";
+  if (r!=null){
+   strValue= unescape(r[2]);
+  }
+  return strValue
+}
+
+const count = +getUrlParam('count') || 100
+
 const canvas = document.getElementById('bouncing-balls-dom')
 
 window.addEventListener('resize', () => {
@@ -49,7 +61,7 @@ function getBall () {
   })
 }
 
-for (let i = 0; i < 1000; i++) {
+for (let i = 0; i < count; i++) {
   const ball = getBall();
   balls.push(ball);
 }

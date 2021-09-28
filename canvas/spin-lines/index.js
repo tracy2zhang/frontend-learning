@@ -84,7 +84,6 @@ function getBall () {
   const y = mouse.y;
   const color = colors[randomIntBetween(0, colors.length)];
   const theta = randomFloatBetween(0, 2 * Math.PI);
-  console.log(theta)
   const distance = randomIntBetween(70, 100);
   return new Ball({
     x,
